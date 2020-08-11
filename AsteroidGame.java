@@ -17,18 +17,11 @@ public class AsteroidGame extends JPanel implements KeyListener,Runnable
 	Image ship;
 	AffineTransform identity = new AffineTransform();
 	private float angle;
-	private int x;
-	private int y;
+	private int x, y;
 	private int dir = 4;      //1 = up     2 = up-right        3 = right        4 = down-right     5 = down    6 = down-left    7 = left    8 = up-left
 	private int dirlaser = 4;
-	private boolean right;
-	private boolean left;
-	private boolean up;
-	private boolean down;
-	private boolean rightlaser;
-	private boolean leftlaser;
-	private boolean uplaser;
-	private boolean downlaser;
+	private boolean right, left, up, down;
+	private boolean rightlaser, leftLaser, upLaser, downLaser;
 	private int health = 10;
 	private int gunLevel = 1;
 	private int deaths = 0;
@@ -41,9 +34,7 @@ public class AsteroidGame extends JPanel implements KeyListener,Runnable
 	private Font f;
 	private Polygon poly;
 	private GradientPaint gp;
-	private Color colorpurple;
-	private Color colorgreen;
-	private Color colorgray;
+	private Color colorpurple, colorgreen, colorgray;
 	private int runcount;
 	private ArrayList<Asteroid> asteroidList;
 	private ArrayList<Laser> laserList;
